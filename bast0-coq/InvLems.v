@@ -11,6 +11,7 @@
 (*                                                                            *)
 (* ************************************************************************** *)
 
+Require Import Omega.
 Require Import List.
 Require Import ListEx.
 Require Import LibEx.
@@ -590,7 +591,9 @@ Proof.
       intros.
       subst x bmrd.
       assert (Hy := bmt_update_pbn_in_bmt_lbn_neq_rev _ _ _ _ _ _ Hu (neq_sym Hlbn12) Hpbn1).
-      eapply HI71; eauto.
+      eapply HI71.
+      apply Hlbn12.
+      apply Hy.
       left.
       exists bmrl.
       trivial.

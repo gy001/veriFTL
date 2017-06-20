@@ -11,6 +11,7 @@
 (*                                                                            *)
 (* ************************************************************************** *)
 
+Require Import Omega.
 Require Import LibEx.
 Require Import List.
 Require Import ListEx.
