@@ -24,6 +24,7 @@ ChangeLog:
 (* ************* ************************************* *****)
 (* ftl interface *)
 
+Require Import Omega.
 Require Import ListEx.
 Require Import Monad.
 Require Import Data.
